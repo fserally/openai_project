@@ -1,0 +1,20 @@
+turtlebot3: #namespace
+    task_and_robot_environment_name: 'TurtleBot3World-v0'
+    ros_ws_abspath: "/home/ros/catkin_ws"
+    pos_step: 0.016     # increment in position for each command
+    #qlearn parameters
+    #alpha: 0.1
+    #gamma: 0.7
+    #epsilon: 0.9
+    #alpha: 0.2
+    #alpha: 0.7
+    alpha: 0.2
+    gamma: 0.8
+    epsilon: 0.9
+    epsilon_discount: 0.9986
+    nepisodes: 10000
+    nsteps: 1500
+    running_step: 0.06 # Time for each step
+    timestep_limit: 1500
+    run_mode: "training"
+    evaluation_model_path: "model_20211110_16:19:2912/turtlebot3_2700model.pkl"
