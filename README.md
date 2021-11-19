@@ -4,13 +4,13 @@ Install python 3.9: sudo apt install python3.9
 
 # Installation of ROS Noetic:
 
-1. Setup your computer to accept software from packages.ros.org.
+1. Setup your computer to accept software from packages.ros.org.<br />
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-2. Setup your keys
-sudo apt install curl 
-curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
-3. Make sure Debian package index is up to date:
-sudo apt update
+2. Setup your keys<br />
+sudo apt install curl <br />
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -<br />
+3. Make sure Debian package index is up to date:<br />
+sudo apt update<br />
 4. Install ROS Noetic (http://wiki.ros.org/noetic/Installation/Ubuntu)
 Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
 sudo apt install ros-noetic-desktop-full
